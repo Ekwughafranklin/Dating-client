@@ -1,0 +1,5 @@
+<div class="container">
+    <h1>Not Found</h1>
+    <button *ngIf="(accountService.currentUser$ |async)===null"   class="btn btn-info btn-lg" routerLink="/">Return to home page</button>
+    <button *ngIf="accountService.currentUser$ |async"   class="btn btn-info btn-lg" routerLink="/">Return</button>
+</div>
