@@ -50,7 +50,7 @@ export class MembersService {
     if(response){
       return of(response);
     }
-    console.log(Object.values(userParams).join('-'));
+   
 let params=getPaginationHeaders(userParams.pageNumber,userParams.pageSize);
 
   params=params.append('minAge',userParams.minAge.toString());
